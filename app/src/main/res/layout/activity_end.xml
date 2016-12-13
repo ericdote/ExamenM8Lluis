@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Aqui aniria el resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="117dp" />
+
+    <TextView
+        android:text="Resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Aqui aniria un text adient amb el resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:text="Botó per retornar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/textView6" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alumnedam.examen.TestActivity">
+
+    <TextView
+        android:id="@+id/tvTitol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Test"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNum1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" />
+
+            <TextView
+                android:id="@+id/tvCalcul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" />
+
+
+            <TextView
+                android:id="@+id/tvNum2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp" />
+</TableRow>
+    </TableLayout>
+    <EditText
+        android:id="@+id/etResposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introdueix una resposta"
+        android:inputType="number"
+        android:padding="20dp" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAcerts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encertades: " />
+
+            <TextView
+                android:id="@+id/tvEncerts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvFallades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fallades: " />
+
+            <TextView
+                android:id="@+id/tvFalls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnSeguent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Següent" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
